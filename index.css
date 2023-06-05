@@ -1,0 +1,275 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #0D3C6E;
+}
+
+
+.navbar{
+    background-color: #0D3C6E;
+    display: flex;
+}
+
+.navbar-brand{
+    color: #828383;
+    font-family: Source Code Pro;
+    font-weight: bold;
+}
+
+.navbar p{
+    color: #828383;
+    font-size: 32px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.container{
+    background-color: #0D3C6E;
+}
+
+.all{
+    width: 100%;
+    height: 100%;
+    background-color: #0D3C6E;
+}
+
+
+.description-dev{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.description-text{
+
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 57px;
+    float: left;
+    position: relative;
+    width: 45%;
+    height: auto;
+    margin: auto;
+}
+
+.description-text p{
+    font-family:Source Code Pro;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    color: #828383;
+}
+
+.description-text span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span{
+    font-family: Source Code Pro;
+    font-weight: bold;
+}
+
+.imagen{
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+    width: 45%;
+    height: auto;
+    margin: auto;
+}
+
+.imagen img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    float: right;
+}
+
+.description{
+    background-color: #246D99;
+    height:auto;
+    padding: 100px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.description p{
+    font-family: Source Code Pro;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin: auto;
+}
+
+.title-work, .title-tecnologies, .projects{
+    margin-top: 200px;
+    text-align: center;
+    color:#828383;
+}
+
+.Work{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    color: #246D99;
+    flex-direction: row;
+}
+
+.Work i{
+    margin: auto;
+    font-size: 50px;
+    width: 0,5%;
+}
+
+.Work p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 0;
+    margin: auto;
+    font-family: Source Code Pro;
+    width: 95,5%;
+}
+
+.contact{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.contact i{
+    font-size: 100px;
+    color: #828383;
+}
+
+.contact a{
+    text-decoration: none;
+    width: 33%;
+    text-align: center;
+}
+
+.gmail{
+    color: #828383;
+}
+
+
+.tecnologies{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.icon-tecnologies i{
+    width: 16,6666667%;
+    text-align: center;
+    font-size: 100px;
+    padding: 35px;
+}
+
+.icon-tecnologies span{
+    text-align: center;
+}
+
+.fa-brands span{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.projects h2{
+    margin-bottom: 50px;
+}
+
+.project-items{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.project-items h5{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: solid #828383 3px;
+    border-top: solid #828383 3px;
+}
+
+.contact h2{
+    text-align: center;
+    width: 100%;
+    color: #828383;
+    font-family: Source Code Pro;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.projects h2{
+    width: 100%;
+    font-family: Source Code Pro;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title-tecnologies h2{
+    width: 100%;
+    font-family: Source Code Pro;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title-work h2 {
+        width: 100%;
+        font-family: Source Code Pro;
+        font-weight: bold;
+        font-size: 30px;
+}
+
+
+
+
+
+
+
+@media (max-width:540px) {
+
+    .description-dev{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        text-align: center;
+    }
+
+    .description-text{
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .imagen{
+        width: 100%;
+        display: flex;
+    }
+
+    .imagen img{
+        margin: auto;
+    }
+
+    .gmail {
+        font-size: 10px;
+    }
+
+}
