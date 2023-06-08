@@ -173,11 +173,19 @@ span{
     width: 16,6666667%;
     text-align: center;
     font-size: 100px;
-    padding: 35px;
+    padding: 35px; 
+}
+
+.icon-tecnologies i:hover{
+    transform: scale(1.6);
+}
+
+.icon-tecnologies{
+    transition: transform .2s;
 }
 
 .icon-tecnologies span{
-    text-align: center;
+    text-align: center; 
 }
 
 .fa-brands span{
@@ -203,6 +211,7 @@ span{
     border-bottom: solid #828383 3px;
     border-top: solid #828383 3px;
 }
+
 
 .contact h2{
     text-align: center;
@@ -235,7 +244,22 @@ span{
 }
 
 
+.curriculum{
+    display: flex;
+    margin-top: 150px;
+}
 
+.curriculum a{
+    background-color: #246D99;
+    margin: auto;
+    padding: 25px;
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+    font-family: Source Code Pro;
+    border-radius: 10px;
+    font-size: 23px;
+}
 
 
 
