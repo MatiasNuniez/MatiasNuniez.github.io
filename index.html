@@ -12,12 +12,37 @@
 <body>
  
   <!-- ---------------------------------------------NAVBAR-------------- -->
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <p class="navbar-brand" >MATIAS NUÑEZ</p
-            >
-        </div>
-      </nav>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#Descripcion">Descripcion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Experience-work">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Proyects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contacto</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Matias
+        </span>
+      </div>
+    </div>
+  </nav>
+
 
 <!-- ------------------------------FINNAVBAR --------------------------------------------- -->
 
@@ -28,37 +53,27 @@
 
             <div class="description-dev">
                 
-              <div class="description-text">
-                    <p>STUDENT DEVELOPER</p>
-                    <span>Hi, i'm Matias and studying system analist in UADER FCyT, Concepcion del Uruguay, Entre Rios, Argentina.</span>
+              <div class="description-text" id="Descripcion">
+                <h1>Hola, soy Matias</h1>
+                <h4>Programador</h4>
+                <p>Soy de Argentina, San Jose, Entre Rios pero actualmente estoy viviendo en Argentina, Concepcion Del Uruguay, Entre Rios por mis estudios. Estoy en busqueda de mi primer trabajo como programador</p>
                 </div>
-
                 <div class="imagen">
-                    <img src="./82460e46-df92-40c6-a37a-b7facab6701f.jpg" alt="imagen">
+                    <img src="./foto2.png" alt="imagen">
                 </div>
             
               </div>
     
 <!-- ----------------------------------------FIN small description ---------------------------- -->
 
-<!-- ------------------------------------------------Description------------------------------------------------------------------- -->
-
-              <div class="description">
-                <p>My name is Matias Enzo Nuñez and i'm 25 years old. I'm from Argentina, San Jose, Entre Rios but currently i'm living in Argentina, Concepcion Del Uruguay, Entre Rios for my studies. I'm looking for my first job as programmer
-                </p>
-              </div>
-
-
-<!-- -------------------------------Fin Description ---------------------------------------------- -->
-
 
 <!-- ------------------------------------Work Experience ------------------------------ -->
 
-              <div class="title-work">
-              <h2>Work Experience</h2>
+              <div class="title-work" id="Experience-work">
+              <h2>Experiencia laboral</h2>
               <div class="Work">
                 <i class="fa-solid fa-mobile-screen fa-flip"></i>
-                <p>Customer service in La central celulares, San Jose, Entre Rios</p>
+                <p>Atencion al cliente en La central celulares, San Jose, Entre Rios</p>
               </div>
             </div>
 <!-- ------------------------------------Fin Work Experience ------------------------------ -->
@@ -66,8 +81,8 @@
 
 <!-- -------------------------------------------- Tecnologies --------------------------------- -->
 
-            <div class="title-tecnologies">
-              <h2>Tecnologies</h2>
+            <div class="title-tecnologies" id="Skills">
+              <h2>Skills</h2>
               <div class="icon-tecnologies">
                   <i class="fa-brands fa-react"><br><span>React </span></i>
                   <i class="fa-brands fa-python"><br><span>Python</span></i>
@@ -80,43 +95,22 @@
 
 <!-- ------------------------------------------FIN TECNOLOGIES --------------------------------------- -->
 
-
-
-<!-- -------------------------------------Projects -------------------------------- -->
-
-            <div class="projects">
-            
-              <h2>My projects</h2>
-            
-              <div class="project-container">
-                <div class="project-items">
-                  <h5>App turnos - db off</h5>
-                  <h5>App turnos - MongoDb</h5>
-                  <h5>App turnos - SqlDb</h5>
-                  <h5>Pokedex - React Native</h5>
-                  <h5>Porgram USD</h5>
-                  <h5>informativePageLaCentral</h5>
-                  <h5>Tp final NoSql</h5>
-                </div>
-              </div>
-            
+          <div class="proyectsContainer" id="Proyects">
+            <h2>Mis proyectos</h2>
+            <div class="proyects">
+              <a href="https://rick-and-morty-weld-delta.vercel.app/" target="_blank"><img src="/imgProyects/Rickl.png" alt=""></a>
+              <a href="https://bestia-corp.vercel.app/" target="_blank"><img src="/imgProyects/Bestia.png" alt=""></a>
+              <a href="https://program-usd-la-central.vercel.app/" target="_blank"><img src="/imgProyects/Dolar.png" alt=""></a>
+              <a href="https://app-turnos-dboff.vercel.app/" target="_blank"><img src="/imgProyects/Turnos.png" alt=""></a>
+              <a href="https://informative-page-la-central.vercel.app/" target="_blank"><img src="/imgProyects/LacentralPage.png" alt=""></a>
             </div>
+          </div>
 
-
-<!-- ---------------------------------------Fin projects-------------------------- -->
-
-<!-- ------------------------------------------------------- Download cv -------------------------------------------------- -->
-
-            <div class="curriculum">
-              <a href="./CV.pdf"  download="Curriculum-vitae-MatiasNuniez">Download CV</a>
-            </div>
-
-<!-- ------------------------------------------------------- Fin Download cv -------------------------------------------------- -->
 
 <!-- -----------------------------------Contact ----------------------------- -->
 
-            <div class="contact">
-              <h2>Contact data</h2>
+            <div class="contact" id="Contact">
+              <h2>Datos de contacto</h2>
               <a href="https://www.github.com/MatiasNuniez" target="_blank"><i class="fa-brands fa-github"></i></a>
               <a class="gmail"><i class="fa-solid fa-envelope"></i><br></br>matiasnuniez192@gmail.com</a>
               <a href="https://www.linkedin.com/in/matias-nu%C3%B1ez-0374511b6/"><i class="fa-brands fa-linkedin"></i></a>
@@ -126,6 +120,13 @@
 
 
         </div>
+        <!-- ------------------------------------------------------- Download cv -------------------------------------------------- -->
+
+        <div class="curriculum">
+          <a href="./CV.pdf"  download="Curriculum-vitae-MatiasNuniez">cv</a>
+        </div>
+
+<!-- ------------------------------------------------------- Fin Download cv -------------------------------------------------- -->
       </div>
 
 
