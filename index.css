@@ -1,30 +1,45 @@
-body{
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --bg-color:#333;
+        --text-color:#fff;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    :root{
+        --bg-color:#fff;
+        --text-color:#000;
+    }
+}
+
+body {
     margin: 0px;
     padding: 0px;
-    background-color: #C1CDD6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
-.nav-item a{
+.nav-item a {
     font-weight: bold;
+    color: orange;
 }
 
-.navbar{
-    background-color: #C1CDD6;
-    color: #C1CDD6;
+.navbar {
+    font-family: Source Code Pro;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
-.container{
-    background-color: #C1CDD6;
-}
-
-.all{
+.all {
     width: 100%;
     height: 100%;
-    background-color: #C1CDD6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 
-.description-dev{
+.description-dev {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -32,8 +47,7 @@ body{
     flex-wrap: wrap;
 }
 
-.description-text{
-
+.description-text {
     padding-left: 10px;
     padding-top: 10px;
     margin-left: 57px;
@@ -44,22 +58,32 @@ body{
     margin: auto;
 }
 
-.description-text p{
-    font-family:Source Code Pro;
-    font-weight: bold;
-}
-
-.description-text span{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-span{
+.description-text p {
     font-family: Source Code Pro;
     font-weight: bold;
 }
 
-.imagen{
+.description-text span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span {
+    font-family: Source Code Pro;
+    font-weight: bold;
+}
+
+.cv {
+    text-decoration: none;
+    border: 2px solid orange;
+    border-radius: 20px;
+    color: orange;
+    padding: 5px;
+    font-family: Source Code Pro;
+    font-weight: bold;
+}
+
+.imagen {
     padding-top: 10px;
     padding-left: 10px;
     margin-left: 10px;
@@ -70,21 +94,21 @@ span{
     margin: auto;
 }
 
-.imagen img{
+.imagen img {
     width: 400px;
     height: 400px;
     float: right;
 }
 
-.description{
+.description {
     background-color: #246D99;
-    height:auto;
+    height: auto;
     padding: 100px;
     display: flex;
     border-radius: 15px;
 }
 
-.description p{
+.description p {
     font-family: Source Code Pro;
     font-weight: bold;
     font-size: 22px;
@@ -92,22 +116,24 @@ span{
     margin: auto;
 }
 
-.title-work, .title-tecnologies, .proyectsContainer{
+.title-work,
+.title-tecnologies,
+.proyectsContainer {
     margin-top: 200px;
     text-align: center;
 }
 
 
-.title-work{
+.title-work {
     width: 100%;
 }
 
-.title-tecnologies{
+.title-tecnologies {
     width: 100%;
 }
 
 
-.Work{
+.Work {
     width: 100%;
     flex-wrap: wrap;
     display: flex;
@@ -115,22 +141,24 @@ span{
     flex-direction: row;
 }
 
-.Work i{
+.Work i {
     margin: auto;
     font-size: 50px;
-    width: 0,5%;
+    width: 0, 5%;
+    color: var(--text-color);
 }
 
-.Work p{
+.Work p {
     font-size: 25px;
     font-weight: bold;
     margin-left: 0;
     margin: auto;
     font-family: Source Code Pro;
-    width: 95,5%;
+    width: 95, 5%;
+    color: var(--text-color);
 }
 
-.contact{
+.contact {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -139,23 +167,23 @@ span{
     margin-top: 200px;
 }
 
-.contact i{
+.contact i {
     font-size: 100px;
     color: C1CDD6;
 }
 
-.contact a{
+.contact a {
     text-decoration: none;
     width: 33%;
     text-align: center;
 }
 
-.gmail{
-    color: C1CDD6;
+.gmail {
+    color: orange;
 }
 
 
-.tecnologies{
+.tecnologies {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -164,26 +192,26 @@ span{
     margin-top: 200px;
 }
 
-.icon-tecnologies i{
-    width: 16,6666667%;
+.img-icons {
+    width: 200px;
     text-align: center;
     font-size: 100px;
-    padding: 35px; 
+    padding: 35px;
 }
 
-.icon-tecnologies i:hover{
+.icon-tecnologies img:hover {
     transform: scale(1.6);
 }
 
-.icon-tecnologies{
+.icon-tecnologies {
     transition: transform .2s;
 }
 
-.icon-tecnologies span{
-    text-align: center; 
+.icon-tecnologies span {
+    text-align: center;
 }
 
-.proyectsContainer h2{
+.proyectsContainer h2 {
     width: 100%;
     font-family: Source Code Pro;
     font-weight: bold;
@@ -197,27 +225,31 @@ span{
     width: 100%;
 }
 
-.proyects a{
+.proyects .card{
     padding: 20px;
     width: 48%;
     height: auto;
     margin: 2px;
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 1px solid var(--text-color);
+    background-color: var(--bg-color);
 }
 
-.proyects img{
+.proyects img {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-.fa-brands span{
+.proyects .card .card-body p{
+    color: var(--text-color);
+}
+
+.fa-brands span {
     font-size: 13px;
     font-weight: bold;
 }
 
 
-.contact h2{
+.contact h2 {
     text-align: center;
     width: 100%;
     color: C1CDD6;
@@ -226,12 +258,18 @@ span{
     font-weight: bold;
 }
 
-.contact a i{
-    color: #151515;
+
+
+.contact .fa-envelope, .fa-github{
+    color: var(--text-color);
+}
+
+.gmail{
+    color: var(--text-color);
 }
 
 
-.title-tecnologies h2{
+.title-tecnologies h2 {
     width: 100%;
     font-family: Source Code Pro;
     font-weight: bold;
@@ -239,27 +277,54 @@ span{
 }
 
 .title-work h2 {
-        width: 100%;
-        font-family: Source Code Pro;
-        font-weight: bold;
-        font-size: 30px;
-        justify-content: center;
+    width: 100%;
+    font-family: Source Code Pro;
+    font-weight: bold;
+    font-size: 30px;
+    justify-content: center;
 }
 
-.curriculum a{
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;    
-    background-color: #246D99;
-    font-weight: bold;
-    text-align: center;
-    color:white;
-    text-decoration: none;
+.form-for-contact {
+    width: 100%;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.form-for-contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-for-contact label {
     font-family: Source Code Pro;
-    border-radius:50%;
+}
+
+.form-for-contact input,
+textarea {
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.form-for-contact h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: Source Code Pro;
+}
+
+.form-for-contact button{
+    background-color: var(--bg-color);
+    margin-top: 15px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid orange;
+    border-radius: 20px;
+    color: orange;
+    padding: 5px;
+    font-family: Source Code Pro;
+    font-weight: bold;
 }
 
 
@@ -267,15 +332,15 @@ span{
 
 @media (max-width:991px) {
 
-    .description-dev{
-        display:flex;
+    .description-dev {
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin: auto;
         text-align: center;
     }
 
-    .description-text{
+    .description-text {
         padding-left: 0px;
         padding-top: 0px;
         margin-left: 0px;
@@ -284,13 +349,14 @@ span{
         margin: auto;
     }
 
-    .imagen{
+    .imagen {
         width: 100%;
         display: flex;
     }
 
-    .imagen img{
+    .imagen img {
         margin: auto;
+        width: 100%;
     }
 
     .gmail {

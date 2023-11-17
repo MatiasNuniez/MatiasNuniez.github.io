@@ -36,9 +36,6 @@
             <a class="nav-link" href="#Contact">Contacto</a>
           </li>
         </ul>
-        <span class="navbar-text">
-          Matias
-        </span>
       </div>
     </div>
   </nav>
@@ -55,9 +52,10 @@
                 
               <div class="description-text" id="Descripcion">
                 <h1>Hola, soy Matias</h1>
-                <h4>Programador</h4>
-                <p>Soy de Argentina, San Jose, Entre Rios pero actualmente estoy viviendo en Argentina, Concepcion Del Uruguay, Entre Rios por mis estudios. Estoy en busqueda de mi primer trabajo como programador</p>
-                </div>
+                <h4>Dev Jr</h4>
+                <p>Soy de Argentina, San Jose, Entre Rios y actualmente estoy en busqueda de mi primer trabajo como Dev Jr</p>
+                <a class="cv" href="./CV.pdf"  download="Curriculum-vitae-MatiasNuniez">Download cv</a>  
+              </div>
                 <div class="imagen">
                     <img src="./posible3.png" alt="imagen">
                 </div>
@@ -67,44 +65,87 @@
 <!-- ----------------------------------------FIN small description ---------------------------- -->
 
 
-<!-- ------------------------------------Work Experience ------------------------------ -->
-
-              <div class="title-work" id="Experience-work">
-              <h2>Experiencia laboral</h2>
-              <div class="Work">
-                <i class="fa-solid fa-mobile-screen fa-flip"></i>
-                <p>Atencion al cliente en La central celulares, San Jose, Entre Rios</p>
-              </div>
-            </div>
-<!-- ------------------------------------Fin Work Experience ------------------------------ -->
-
-
 <!-- -------------------------------------------- Tecnologies --------------------------------- -->
 
-            <div class="title-tecnologies" id="Skills">
-              <h2>Skills</h2>
-              <div class="icon-tecnologies">
-                  <i class="fa-brands fa-react"><br><span>React </span></i>
-                  <i class="fa-brands fa-python"><br><span>Python</span></i>
-                  <i class="fa-brands fa-square-js"><br><span>JavaScript</span></i>
-                  <i class="fa-brands fa-html5"><br><span>Html</span></i>
-                  <i class="fa-brands fa-css3-alt"><br><span>Css</span></i>
-              </div>    
-            </div>
+<div class="title-tecnologies" id="Skills">
+  <h2>Skills</h2>
+  <div class="icon-tecnologies">
 
+    <img src="./Icons-Skills/css.png" alt="css" class="img-icons">
+    <img src="./Icons-Skills/html.png" alt="html" class="img-icons">
+    <img src="./Icons-Skills/js.png" alt="js" class="img-icons">
+    <img src="./Icons-Skills/python.png" alt="python" class="img-icons">
+    <img src="./Icons-Skills/react.png" alt="react" class="img-icons">
+
+</div>
 
 <!-- ------------------------------------------FIN TECNOLOGIES --------------------------------------- -->
 
           <div class="proyectsContainer" id="Proyects">
             <h2>Mis proyectos</h2>
             <div class="proyects">
-              <a href="https://rick-and-morty-weld-delta.vercel.app/" target="_blank"><img src="/imgProyects/Rickl.png" alt=""></a>
-              <a href="https://bestia-corp.vercel.app/" target="_blank"><img src="/imgProyects/Bestia.png" alt=""></a>
-              <a href="https://program-usd-la-central.vercel.app/" target="_blank"><img src="/imgProyects/Dolar.png" alt=""></a>
-              <a href="https://app-turnos-dboff.vercel.app/" target="_blank"><img src="/imgProyects/Turnos.png" alt=""></a>
-              <a href="https://informative-page-la-central.vercel.app/" target="_blank"><img src="/imgProyects/LacentralPage.png" alt=""></a>
+
+              <div class="card">
+                <a target="_blank" href="https://rick-and-morty-weld-delta.vercel.app/"> <img src="/imgProyects/Rickl.png" class="card-img-top" alt="img"> </a>
+                <div class="card-body">
+                  <p class="card-text">Simple app consumiendo la api de https://rickandmortyapi.com/</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <a target="_blank" href="https://bestia-corp.vercel.app/"> <img src="/imgProyects/Bestia.png" class="card-img-top" alt="img"> </a>
+                <div class="card-body">
+                  <p class="card-text">Proyecto para @BestiaCorp, equipo de esports. Solo de practica.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <a target="_blank" href="https://program-usd-la-central.vercel.app/"> <img src="/imgProyects/Dolar.png" class="card-img-top" alt="img"> </a>
+                <div class="card-body">
+                  <p class="card-text">App para convertir los precio de peso a dolar oficial del dia, consumiendo api de dolarapi.com</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <a target="_blank" href="https://app-turnos-dboff.vercel.app/"> <img src="/imgProyects/Turnos.png" class="card-img-top" alt="img"> </a>
+                <div class="card-body">
+                  <p class="card-text">App basica de turnos sin database, en mi github esta con database mongo y sql.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <a target="_blank" href="https://informative-page-la-central.vercel.app/"> <img src="/imgProyects/LacentralPage.png" class="card-img-top" alt="img"> </a>
+                <div class="card-body">
+                  <p class="card-text">Pagina informativa para @lacentralcelulares, primer proyecto</p>
+                </div>
+              </div>
             </div>
           </div>
+
+
+<!-- ------------------------------------Work Experience ------------------------------ -->
+
+<div class="title-work" id="Experience-work">
+  <h2>Experiencia laboral</h2>
+  <div class="Work">
+    <i class="fa-solid fa-mobile-screen fa-flip"></i>
+    <p>Atencion al cliente en La central celulares, San Jose, Entre Rios</p>
+  </div>
+</div>
+<!-- ------------------------------------Fin Work Experience ------------------------------ -->
+
+<div class="form-for-contact">
+  <h1>Enviame un email</h1>
+  <form action="https://formsubmit.co/matiasnuniez192@gmail.com" method="POST">
+    <input type="text" name="name" id="name" placeholder="Nombre...">
+    <input type="email" name="email" id="email" placeholder="Email...">
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+    <button type="submit">Enviar</button>
+    <input type="hidden" name="_next" value="https://matiasnuniez.github.io/">
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+</div>
+
 
 
 <!-- -----------------------------------Contact ----------------------------- -->
@@ -120,21 +161,8 @@
 
 
         </div>
-        <!-- ------------------------------------------------------- Download cv -------------------------------------------------- -->
 
-        <div class="curriculum">
-          <a href="./CV.pdf"  download="Curriculum-vitae-MatiasNuniez">cv</a>
-        </div>
-
-<!-- ------------------------------------------------------- Fin Download cv -------------------------------------------------- -->
       </div>
-
-
-
-
-
-
-
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
