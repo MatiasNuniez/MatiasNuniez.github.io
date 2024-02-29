@@ -1,182 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfilio</title>
-    <link rel="stylesheet" href="./index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/575da74f10.js" crossorigin="anonymous"></script>
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfilio</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/575da74f10.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
- 
-  <!-- ---------------------------------------------NAVBAR-------------- -->
+  <header>
+    <!-- ---------------------------------------------NAVBAR-------------- -->
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#Descripcion">Descripcion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Experience-work">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Proyects">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container nav__container">
+        <div class="logo">
+          <h2>MatiasDev<span class="point">.</span></h2>
+        </div>
 
-
-<!-- ------------------------------FINNAVBAR --------------------------------------------- -->
-
-
-<!-- --------------------------------------Small description -------------------------------------- -->
-      <div class="all" >
-        <div class="container">
-
-            <div class="description-dev">
-                
-              <div class="description-text" id="Descripcion">
-                <h1>Hola, soy Matias</h1>
-                <h4>Dev</h4>
-                <p>Soy de Argentina, San Jose, Entre Rios. Soy estudiante de Lic. en Analista de Sistemas en Concepcion del Uruguay y actualmente estoy en busqueda de mi primer trabajo como Dev</p>
-                <a class="cv" href="./cv-matiasnuñez.pdf"  download="Curriculum-vitae-MatiasNuniez">Download cv</a>  
-              </div>
-                <div class="imagen">
-                    <img src="./posible3.png" alt="imagen">
-                </div>
-            
-              </div>
-    
-<!-- ----------------------------------------FIN small description ---------------------------- -->
-
-
-<!-- -------------------------------------------- Tecnologies --------------------------------- -->
-
-<div class="title-tecnologies" id="Skills">
-  <h2>Skills</h2>
-  <div class="icon-tecnologies">
-
-    <img src="./Icons-Skills/css.png" alt="css" class="img-icons">
-    <img src="./Icons-Skills/html.png" alt="html" class="img-icons">
-    <img src="./Icons-Skills/js.png" alt="js" class="img-icons">
-    <img src="./Icons-Skills/python.png" alt="python" class="img-icons">
-    <img src="./Icons-Skills/react.png" alt="react" class="img-icons">
-    <img src="./Icons-Skills/nodejs.png" alt="react" class="img-icons">
-
-</div>
-
-<!-- ------------------------------------------FIN TECNOLOGIES --------------------------------------- -->
-
-          <div class="proyectsContainer" id="Proyects">
-            <h2>Mis proyectos</h2>
-            <div class="proyects">
-
-              <div class="card">
-                <a target="_blank" href="https://rick-and-morty-weld-delta.vercel.app/"> <img src="/imgProyects/Rickl.png" class="card-img-top" alt="img"> </a>
-                <div class="card-body">
-                  <p class="card-text">Simple app consumiendo la api de https://rickandmortyapi.com/</p>
-                </div>
-              </div>
-
-              <div class="card">
-                <a target="_blank" href="https://bestia-corp.vercel.app/"> <img src="/imgProyects/Bestia.png" class="card-img-top" alt="img"> </a>
-                <div class="card-body">
-                  <p class="card-text">Proyecto para @BestiaCorp, equipo de esports. Solo de practica.</p>
-                </div>
-              </div>
-
-              <div class="card">
-                <a target="_blank" href="https://program-usd-la-central.vercel.app/"> <img src="/imgProyects/Dolar.png" class="card-img-top" alt="img"> </a>
-                <div class="card-body">
-                  <p class="card-text">App para convertir los precio de peso a dolar oficial del dia, consumiendo api de dolarapi.com</p>
-                </div>
-              </div>
-
-              <div class="card">
-                <a target="_blank" href="https://app-turnos-dboff.vercel.app/"> <img src="/imgProyects/Turnos.png" class="card-img-top" alt="img"> </a>
-                <div class="card-body">
-                  <p class="card-text">App basica de turnos sin database, en mi github esta con database mongo y sql.</p>
-                </div>
-              </div>
-
-              <div class="card">
-                <a target="_blank" href="https://informative-page-la-central.vercel.app/"> <img src="/imgProyects/LacentralPage.png" class="card-img-top" alt="img"> </a>
-                <div class="card-body">
-                  <p class="card-text">Pagina informativa para @lacentralcelulares, primer proyecto</p>
-                </div>
-              </div>
-
-              <div class="card">
-                <a target="_blank" href="https://github.com/MatiasNuniez/BasicBackend-typescript-and-poo"> <img src="/imgProyects/Backend.png" class="card-img-top" alt="img"> </a>
-                <div class="card-body">
-                  <p class="card-text">Proyecto backend TypeScript+nodejs+express</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
-<!-- ------------------------------------Work Experience ------------------------------ -->
-
-<div class="title-work" id="Experience-work">
-  <h2>Experiencia laboral</h2>
-  <div class="Work">
-    <i class="fa-solid fa-mobile-screen fa-flip"></i>
-    <p>Atencion al cliente en La central celulares, San Jose, Entre Rios</p>
-  </div>
-</div>
-<!-- ------------------------------------Fin Work Experience ------------------------------ -->
-
-<div class="form-for-contact">
-  <h1>Enviame un email</h1>
-  <form action="https://formsubmit.co/matiasnuniez192@gmail.com" method="POST">
-    <input type="text" name="name" id="name" placeholder="Nombre...">
-    <input type="email" name="email" id="email" placeholder="Email...">
-    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje..."></textarea>
-    <button type="submit">Enviar</button>
-    <input type="hidden" name="_next" value="https://matiasnuniez.github.io/">
-    <input type="hidden" name="_captcha" value="false">
-  </form>
-</div>
-
-
-
-<!-- -----------------------------------Contact ----------------------------- -->
-
-            <div class="contact" id="Contact">
-              <h2>Datos de contacto</h2>
-              <a href="https://www.github.com/MatiasNuniez" target="_blank"><i class="fa-brands fa-github"></i></a>
-              <a class="gmail"><i class="fa-solid fa-envelope"></i><br></br>matiasnuniez192@gmail.com</a>
-              <a href="https://www.linkedin.com/in/matias-nu%C3%B1ez-0374511b6/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-
-<!-- ------------------------------- Fin Contact ------------------------------------- -->
-
-
+        <div class="links">
+          <a href="">Descripcion</a>
+          <a href="">Experiencia</a>
+          <a href="">Skills</a>
+          <a href="">Proyectos</a>
+          <a href="">Contacto</a>
         </div>
 
       </div>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </nav>
+
+    <div class="container description-dev">
+
+      <div class="description-text" id="Descripcion">
+        <h1 class="container__typing">Hola, soy Matias<span class="point">.</span></h1>
+        <h4>Dev</h4>
+        <p>Soy de Argentina, San Jose, Entre Rios. Soy analista de sistemas y estudiante de la Lic. en Concepcion del
+          Uruguay, actualmente estoy en busqueda de mi primer trabajo como Dev</p>
+        <a class="cv" href="./cv-matiasnuñez.pdf" download="Curriculum-vitae-MatiasNuniez">Download cv</a>
+      </div>
+      <div class="imagen">
+        <img src="./imgProyects/1.jpeg" alt="imagen">
+      </div>
+
+    </div>
+
+    <!-- ------------------------------FINNAVBAR --------------------------------------------- -->
+  </header>
+  <div class="all">
+    <div class="container">
+      <!-- -------------------------------------------- Tecnologies --------------------------------- -->
+
+      <div class="title-tecnologies" id="Skills">
+        <h2>Skills</h2>
+        <div class="icon-tecnologies">
+
+          <img src="./Icons-Skills/css.png" alt="css" class="img-icons">
+          <img src="./Icons-Skills/html.png" alt="html" class="img-icons">
+          <img src="./Icons-Skills/js.png" alt="js" class="img-icons">
+          <img src="./Icons-Skills/python.png" alt="python" class="img-icons">
+          <img src="./Icons-Skills/react.png" alt="react" class="img-icons">
+          <img src="./Icons-Skills/nodejs.png" alt="react" class="img-icons">
+
+        </div>
+
+        <!-- ------------------------------------------FIN TECNOLOGIES --------------------------------------- -->
+
+        <div class="proyectsContainer" id="Proyects">
+          <h2>Mis proyectos</h2>
+          <div class="proyects">
+
+            <div class="card">
+              <a target="_blank" href="https://rick-and-morty-weld-delta.vercel.app/"> <img src="/imgProyects/Rickl.png"
+                  class="card-img-top" alt="img"> </a>
+              <div class="card-body">
+                <p class="card-text">Simple app consumiendo la api de https://rickandmortyapi.com/</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <a target="_blank" href="https://bestia-corp.vercel.app/"> <img src="/imgProyects/Bestia.png"
+                  class="card-img-top" alt="img"> </a>
+              <div class="card-body">
+                <p class="card-text">Proyecto para @BestiaCorp, equipo de esports. Solo de practica.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <a target="_blank" href="https://program-usd-la-central.vercel.app/"> <img src="/imgProyects/Dolar.png"
+                  class="card-img-top" alt="img"> </a>
+              <div class="card-body">
+                <p class="card-text">App para convertir los precio de peso a dolar oficial del dia, consumiendo api de
+                  dolarapi.com</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <a target="_blank" href="https://app-turnos-dboff.vercel.app/"> <img src="/imgProyects/Turnos.png"
+                  class="card-img-top" alt="img"> </a>
+              <div class="card-body">
+                <p class="card-text">App basica de turnos sin database, en mi github esta con database mongo y sql.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <a target="_blank" href="https://informative-page-la-central.vercel.app/"> <img
+                  src="/imgProyects/LacentralPage.png" class="card-img-top" alt="img"> </a>
+              <div class="card-body">
+                <p class="card-text">Pagina informativa para @lacentralcelulares, primer proyecto</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <a target="_blank" href="https://github.com/MatiasNuniez/BasicBackend-typescript-and-poo"> <img
+                  src="/imgProyects/Backend.png" class="card-img-top" alt="img"> </a>
+              <div class="card-body">
+                <p class="card-text">Proyecto backend TypeScript+nodejs+express</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- ------------------------------------Work Experience ------------------------------ -->
+
+        <div class="title-work" id="Experience-work">
+          <h2>Experiencia laboral</h2>
+          <div class="Work">
+            <i class="fa-solid fa-mobile-screen fa-flip"></i>
+            <p>Atencion al cliente en La central celulares, San Jose, Entre Rios</p>
+          </div>
+        </div>
+        <!-- ------------------------------------Fin Work Experience ------------------------------ -->
+
+        <div class="form-for-contact">
+          <h1>Enviame un email</h1>
+          <form action="https://formsubmit.co/matiasnuniez192@gmail.com" method="POST">
+            <input type="text" name="name" id="name" placeholder="Nombre...">
+            <input type="email" name="email" id="email" placeholder="Email...">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="_next" value="https://matiasnuniez.github.io/">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <!-- -----------------------------------Contact ----------------------------- -->
+
+    <div class="contact" id="Contact">
+      <a class="github" href="https://www.github.com/MatiasNuniez" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a class="gmail"><i class="fa-solid fa-envelope"></i><br></br>matiasnuniez192@gmail.com</a>
+      <a class="linkedin" href="https://www.linkedin.com/in/matias-nu%C3%B1ez-0374511b6/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+    <!-- ------------------------------- Fin Contact ------------------------------------- -->
+
+  </div>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

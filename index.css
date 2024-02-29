@@ -1,39 +1,72 @@
 
 @media (prefers-color-scheme: dark){
     :root{
-        --bg-color:#333;
-        --text-color:#fff;
+        --bg-color:#181823;
+        --text-color:whitesmoke;
+        --orange:#FFA447;
     }
 }
 
 @media (prefers-color-scheme: light){
     :root{
-        --bg-color:#fff;
-        --text-color:#000;
+        --bg-color:whitesmoke;
+        --text-color:#181823;
+        --orange:#FFA447;
     }
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
+header{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+}
+
+.point{
+    font-weight: bold;
+    color: var(--orange);
+    font-size: 20px;
+}
+
 .nav-item a {
     font-weight: bold;
-    color: orange;
+    color: var(--orange);
 }
 
 .navbar {
     font-family: Source Code Pro;
     background-color: var(--bg-color);
     color: var(--text-color);
+    border-bottom: 1px solid rgba(255, 136,0,.3);
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo h2{
+    font-weight: bold;
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.links a:hover{
+    color: var(--orange);
 }
 
 .all {
-    width: 100%;
-    height: 100%;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -43,6 +76,7 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -64,6 +98,7 @@ body {
 }
 
 .description-text span {
+    width: 50%;
     font-size: 20px;
     font-weight: bold;
 }
@@ -74,30 +109,28 @@ span {
 }
 
 .cv {
+    padding: .8rem;
     text-decoration: none;
-    border: 2px solid orange;
+    background-color: var(--orange);
     border-radius: 20px;
-    color: orange;
-    padding: 5px;
+    color: var(--bg-color);
     font-family: Source Code Pro;
     font-weight: bold;
 }
 
 .imagen {
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 10px;
-    position: relative;
-    float: left;
     width: 45%;
-    height: auto;
+    position: relative;
+    text-align:right;
+    height: calc(100vh-70px);
     margin: auto;
 }
 
 .imagen img {
-    width: 400px;
-    height: 400px;
-    float: right;
+    width:50%;
+    object-fit: cover;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 .description {
@@ -119,7 +152,7 @@ span {
 .title-work,
 .title-tecnologies,
 .proyectsContainer {
-    margin-top: 200px;
+    padding-top: 400px;
     text-align: center;
 }
 
@@ -178,8 +211,31 @@ span {
     text-align: center;
 }
 
+.github:hover {
+    background-color:#181829;
+}
+
+.gmail:hover {
+    background-color:#181829;
+}
+
+.linkedin:hover {
+    background-color:#181829;
+}
+
+.github {
+    border-radius: 20px;
+}
+
 .gmail {
-    color: orange;
+    border-radius: 20px;
+    color: var(--text-color);
+    font-family: Source Code Pro;
+    font-weight: bold;
+}
+
+.linkedin {
+    border-radius: 20px;
 }
 
 
@@ -223,15 +279,17 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    background-color: var(--bg-color);
 }
 
 .proyects .card{
-    padding: 20px;
-    width: 48%;
+    padding: 10px;
+    width: 45%;
     height: auto;
-    margin: 2px;
-    border: 1px solid var(--text-color);
-    background-color: var(--bg-color);
+    margin: 5px;
+    box-shadow: 0px 0px 5px var(--text-color);
+    /* border: 1px solid var(--text-color);*/
+    background-color: var(--bg-color); 
 }
 
 .proyects img {
@@ -241,6 +299,8 @@ span {
 
 .proyects .card .card-body p{
     color: var(--text-color);
+    font-family: Source Code Pro;
+    font-weight: bold;
 }
 
 .fa-brands span {
@@ -261,10 +321,6 @@ span {
 
 
 .contact .fa-envelope, .fa-github{
-    color: var(--text-color);
-}
-
-.gmail{
     color: var(--text-color);
 }
 
@@ -300,10 +356,16 @@ span {
     font-family: Source Code Pro;
 }
 
-.form-for-contact input,
-textarea {
+.form-for-contact input{
     border-radius: 6px;
     margin-bottom: 15px;
+    font-weight: bold;
+    font-family: Source Code Pro;
+}
+
+.form-for-contact textarea{
+    font-weight: bold;
+    font-family: Source Code Pro;
 }
 
 .form-for-contact h1 {
@@ -319,18 +381,47 @@ textarea {
     width: 200px;
     text-align: center;
     text-decoration: none;
-    border: 2px solid orange;
+    border: 2px solid var(--orange);;
     border-radius: 20px;
-    color: orange;
+    color: var(--orange);;
     padding: 5px;
     font-family: Source Code Pro;
     font-weight: bold;
 }
 
+.container__typing{
+    width: max-content;
+    animation:teclear .8s steps(16), transparent .5s step-end infinite alternate;
+    white-space:nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
 
+@keyframes teclear {
+    from{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes transparent{
+    50%{
+        border-color: transparent;
+    }
+}
 
 
 @media (max-width:991px) {
+
+    .logo{
+        margin: auto;
+    }
+
+    .links{
+        display: none;
+    }
 
     .description-dev {
         display: flex;
@@ -341,22 +432,23 @@ textarea {
     }
 
     .description-text {
-        padding-left: 0px;
-        padding-top: 0px;
-        margin-left: 0px;
         width: 100%;
         height: auto;
         margin: auto;
     }
 
     .imagen {
-        width: 100%;
+        width: 50%;
         display: flex;
     }
 
     .imagen img {
         margin: auto;
         width: 100%;
+    }
+    
+    .container__typing{
+        margin: auto;
     }
 
     .gmail {
