@@ -290,7 +290,7 @@ span {
     width: 45%;
     height: auto;
     margin: 5px;
-    box-shadow: 0px 0px 5px var(--text-color);
+    box-shadow: 0px 0px 5px var(--orange);
     /* border: 1px solid var(--text-color);*/
     background-color: var(--bg-color); 
 }
