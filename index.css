@@ -121,7 +121,7 @@ span {
 }
 
 .imagen {
-    width: 50%;
+    width: 45%;
     position: relative;
     text-align:right;
     height: calc(100vh-70px);
