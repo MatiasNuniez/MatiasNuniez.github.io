@@ -1,200 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Matias Nuñez - Desarrollador Full Stack">
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/6840/6840478.png">
-  <title>MatiasDev</title>
-  <link rel="stylesheet" href="./index.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>MatiasDev | Portfolio</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/575da74f10.js" crossorigin="anonymous"></script>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <header>
-    <!-- ---------------------------------------------NAVBAR-------------- -->
-
-    <nav class="navbar navbar-expand-lg">
-      <div class="container nav__container">
+    <nav class="navbar">
+      <div class="nav__container">
         <div class="logo">
           <h2>MatiasDev<span class="point">.</span></h2>
         </div>
 
-        <div class="links">
-          <a href="#Description">Descripcion</a>
-          <a href="#Skills">Skills</a>
-          <a href="#Proyects">Proyectos</a>
-          <a href="#Experience-work">Experiencia</a>
-          <a href="#Contact">Contacto</a>
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+
+        <div class="nav__links" id="navLinks">
+          <a href="#about">Sobre mí</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#experience">Experiencia</a>
+          <a href="#contact">Contacto</a>
         </div>
-
       </div>
-
     </nav>
 
-    <div class="container description-dev">
-
-      <div class="description-text" id="Descripcion">
-        <h1 class="container__typing">Hola, soy Matias<span class="point">.</span></h1>
-        <h4>Dev</h4>
-        <p>Tengo 27 años, actualmente estoy en busqueda de mi primer trabajo, soy analista de sistemas y estudiante (Ultimo año) de la Lic. en Concepcion del
-          Uruguay. </p>
-        <a class="cv" href="./CV_Matias_Nuñez.pdf" download="Curriculum-vitae-MatiasNuniez">Descargar cv</a>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="hero__content" data-aos="fade-right" data-aos-duration="1000">
+        <p class="hero__greeting">¡Hola! 👋 Soy</p>
+        <h1 class="hero__title">Matias Nuñez<span class="point">.</span></h1>
+        <h2 class="hero__subtitle">Full Stack Developer</h2>
+        <p class="hero__description">
+          Tengo 28 años, soy Analista de Sistemas y actualmente estoy desarrollando mi tesis de la Licenciatura en Sistemas de informacion en Concepción del Uruguay. Apasionado por crear soluciones 
+          tecnológicas y aprender nuevas tecnologías.
+        </p>
+        <div class="hero__buttons">
+          <a class="btn btn--primary" href="./CV_Matias_Nuñez.pdf" download="Curriculum-vitae-MatiasNuniez">
+            <i class="fa-solid fa-download"></i> Descargar CV
+          </a>
+          <a class="btn btn--secondary" href="#contact">
+            <i class="fa-solid fa-envelope"></i> Contactame
+          </a>
+        </div>
       </div>
-      <div class="imagen">
-        <img src="./imgProyects/1.jpg" alt="imagen">
+      <div class="hero__image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="hero__image-wrapper">
+          <img src="./imgProyects/1.jpg" alt="Matias Nuñez" loading="lazy">
+        </div>
       </div>
-
-    </div>
-
-    <!-- ------------------------------FINNAVBAR --------------------------------------------- -->
+    </section>
   </header>
-  <div class="all">
-    <div class="container">
 
-      <!-- -------------------------------------------- Tecnologies --------------------------------- -->
-      <section class="title-tecnologies" id="Skills">
-        <h2>Skills</h2>
-        <div class="icon-tecnologies">
-
-          <img src="./Icons-Skills/html.png" alt="html" class="img-icons">
-          <img src="./Icons-Skills/js.png" alt="js" class="img-icons">
-          <img src="./Icons-Skills/react.png" alt="react" class="img-icons">
-          <img src="./Icons-Skills/nodejs.png" alt="nodejs" class="img-icons">
-          <img src="./Icons-Skills/postgres.png" alt="postgres" class="img-icons">
-          <img src="./Icons-Skills/mongo.png" alt="mongo" class="img-icons">
-          <img src="./Icons-Skills/git.png" alt="git" class="img-icons">
-
+  <main>
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title" data-aos="fade-up">
+          <span class="section__title-icon"><i class="fa-solid fa-code"></i></span>
+          Skills & Tecnologías
+        </h2>
+        <p class="section__subtitle" data-aos="fade-up" data-aos-delay="100">
+          Tecnologías con las que trabajo día a día
+        </p>
+        
+        <div class="skills__grid">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+            <img src="./Icons-Skills/html.png" alt="HTML5" loading="lazy">
+            <span>HTML5</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+            <img src="./Icons-Skills/css.png" alt="CSS3" loading="lazy">
+            <span>CSS3</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="./Icons-Skills/js.png" alt="JavaScript" loading="lazy">
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+            <img src="./Icons-Skills/react.png" alt="React" loading="lazy">
+            <span>React</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+            <img src="./Icons-Skills/nodejs.png" alt="Node.js" loading="lazy">
+            <span>Node.js</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+            <img src="./Icons-Skills/postgres.png" alt="PostgreSQL" loading="lazy">
+            <span>PostgreSQL</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+            <img src="./Icons-Skills/git.png" alt="Git" loading="lazy">
+            <span>Git</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+            <img src="./Icons-Skills/docker.png" alt="Docker" loading="lazy">
+            <span>Docker</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="550">
+            <img src="./Icons-Skills/jira.png" alt="Jira" loading="lazy">
+            <span>Jira</span>
+          </div>
         </div>
-      </section>
-      <!-- ------------------------------------------FIN TECNOLOGIES --------------------------------------- -->
+      </div>
+    </section>
 
-      <section class="proyectsContainer" id="Proyects">
-        <h2>Mis proyectos</h2>
-        <div class="proyects">
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title" data-aos="fade-up">
+          <span class="section__title-icon"><i class="fa-solid fa-folder-open"></i></span>
+          Mis Proyectos
+        </h2>
+        <p class="section__subtitle" data-aos="fade-up" data-aos-delay="100">
+          Una selección de proyectos en los que he trabajado
+        </p>
 
-          <div class="card">
-            <a target="_blank" href="https://rick-and-morty-weld-delta.vercel.app/"> <img src="/imgProyects/Rickl.png"
-                class="card-img-top" alt="img"> </a>
-            <div class="card-body">
-              <p class="card-text">Simple app consumiendo la api de https://rickandmortyapi.com/</p>
+        <div class="projects__grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card__image">
+              <img src="./imgProyects/Rickl.png" alt="Rick and Morty App" loading="lazy">
+              <div class="project-card__overlay">
+                <a href="https://rick-and-morty-weld-delta.vercel.app/" target="_blank" class="project-card__link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div class="card">
-            <a target="_blank" href="https://bestia-corp.vercel.app/"> <img src="/imgProyects/Bestia.png"
-                class="card-img-top" alt="img"> </a>
-            <div class="card-body">
-              <p class="card-text">Proyecto para @BestiaCorp, equipo de esports. Solo de practica.</p>
+            <div class="project-card__content">
+              <h3>Rick and Morty App</h3>
+              <p>App consumiendo la API de Rick and Morty para explorar personajes de la serie.</p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">API REST</span>
+                <span class="tag">CSS</span>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
-            <a target="_blank" href="https://program-usd-la-central.vercel.app/"> <img src="/imgProyects/Dolar.png"
-                class="card-img-top" alt="img"> </a>
-            <div class="card-body">
-              <p class="card-text">App para convertir los precio de peso a dolar oficial del dia, consumiendo api de
-                dolarapi.com</p>
+          <!-- Project 2 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-card__image">
+              <img src="./imgProyects/Bestia.png" alt="Bestia Corp" loading="lazy">
+              <div class="project-card__overlay">
+                <a href="https://bestia-corp.vercel.app/" target="_blank" class="project-card__link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div class="card">
-            <a target="_blank" href="https://app-turnos-dboff.vercel.app/"> <img src="/imgProyects/Turnos.png"
-                class="card-img-top" alt="img"> </a>
-            <div class="card-body">
-              <p class="card-text">App basica de turnos sin database, en mi github esta con database mongo y sql.</p>
+            <div class="project-card__content">
+              <h3>Bestia Corp</h3>
+              <p>Landing page para equipo de esports @BestiaCorp.</p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">Diseño UI</span>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
-            <a target="_blank" href="https://informative-page-la-central.vercel.app/"> <img
-                src="/imgProyects/LacentralPage.png" class="card-img-top" alt="img"> </a>
-            <div class="card-body">
-              <p class="card-text">Pagina informativa para @lacentralcelulares, primer proyecto</p>
+          <!-- Project 3 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card__image">
+              <img src="./imgProyects/Dolar.png" alt="Conversor Dólar" loading="lazy">
+              <div class="project-card__overlay">
+                <a href="https://program-usd-la-central.vercel.app/" target="_blank" class="project-card__link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div class="card">
-            <a target="_blank" href="https://github.com/MatiasNuniez/BasicBackend-typescript-and-poo"> <img
-                src="/imgProyects/Backend.png" class="card-img-top" alt="img"> </a>
-            <div class="card-body">
-              <p class="card-text">Proyecto backend TypeScript+nodejs+express</p>
+            <div class="project-card__content">
+              <h3>Conversor USD</h3>
+              <p>Conversor de pesos a dólar oficial del día usando dolarapi.com.</p>
+              <div class="project-card__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">API REST</span>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
-            <a target="_blank" href="https://github.com/MatiasNuniez/celularesezequiel"> <img
-                src="/imgProyects/celularesezequiel.png" class="card-img-top" alt="img"> </a>
-            <div class="card-body">
-              <p class="card-text">Proyecto frontend para celulares ezequiel. Pagina de gestion de clientes y stock react+bootstrap</p>
+          <!-- Project 4 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card__image">
+              <img src="./imgProyects/Turnos.png" alt="App de Turnos" loading="lazy">
+              <div class="project-card__overlay">
+                <a href="https://app-turnos-dboff.vercel.app/" target="_blank" class="project-card__link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div class="card">
-            <a target="_blank" href="https://github.com/MatiasNuniez/BackLacentral"> <img
-                src="/imgProyects/Backend.png" class="card-img-top" alt="img"> </a>
-            <div class="card-body">
-              <p class="card-text">Backend para celulares ezequiel. Pagina de gestion de clientes y stock TypeScript+nodejs+express+jwt</p>
+            <div class="project-card__content">
+              <h3>Sistema de Turnos</h3>
+              <p>Aplicación de gestión de turnos. Versión con MongoDB y SQL disponible en GitHub.</p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
-            <a target="_blank" href="https://github.com/MatiasNuniez/bibliotecaJava-hibernate"> <img
-                src="/imgProyects/java_hibernate.jpg" class="card-img-top" alt="img"> </a>
-            <div class="card-body">
-              <p class="card-text">Proyecto de consola (biblioteca alquiler de libros) para aprender un poco de java con hibernate</p>
+          <!-- Project 5 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-card__image">
+              <img src="./imgProyects/LacentralPage.png" alt="La Central Celulares" loading="lazy">
+              <div class="project-card__overlay">
+                <a href="https://informative-page-la-central.vercel.app/" target="_blank" class="project-card__link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
             </div>
-          </div>
+            <div class="project-card__content">
+              <h3>La Central Celulares</h3>
+              <p>Página informativa para comercio de celulares. Mi primer proyecto real.</p>
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
 
+          <!-- Project 6 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card__image">
+              <img src="./imgProyects/celularesezequiel.png" alt="Gestión de Stock" loading="lazy">
+              <div class="project-card__overlay">
+                <a href="https://github.com/MatiasNuniez/celularesezequiel" target="_blank" class="project-card__link">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3>Sistema de Gestión</h3>
+              <p>Sistema de gestión de clientes y stock para local de celulares.</p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card__image">
+              <img src="./imgProyects/Backend.png" alt="Backend TypeScript" loading="lazy">
+              <div class="project-card__overlay">
+                <a href="https://github.com/MatiasNuniez/BasicBackend-typescript-and-poo" target="_blank" class="project-card__link">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3>Backend TypeScript</h3>
+              <p>API REST con TypeScript, Node.js, Express y POO.</p>
+              <div class="project-card__tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Express</span>
+                <span class="tag">POO</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-card__image">
+              <img src="./imgProyects/Backend.png" alt="Backend JWT" loading="lazy">
+              <div class="project-card__overlay">
+                <a href="https://github.com/MatiasNuniez/BackLacentral" target="_blank" class="project-card__link">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3>Backend con JWT</h3>
+              <p>API para gestión de clientes y stock con autenticación JWT.</p>
+              <div class="project-card__tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Express</span>
+                <span class="tag">JWT</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card__image">
+              <img src="./imgProyects/java_hibernate.jpg" alt="Biblioteca Java" loading="lazy">
+              <div class="project-card__overlay">
+                <a href="https://github.com/MatiasNuniez/bibliotecaJava-hibernate" target="_blank" class="project-card__link">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3>Biblioteca Java</h3>
+              <p>Sistema de alquiler de libros con Java e Hibernate.</p>
+              <div class="project-card__tags">
+                <span class="tag">Java</span>
+                <span class="tag">Hibernate</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ------------------------------------Work Experience ------------------------------ -->
-      <section class="title-work" id="Experience-work">
-        <h2>Experiencia laboral</h2>
-        <div class="Work">
-          <i class="fa-solid fa-mobile-screen fa-flip"></i>
-          <p>Atencion al cliente en La central celulares, San Jose, Entre Rios</p>
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <h2 class="section__title" data-aos="fade-up">
+          <span class="section__title-icon"><i class="fa-solid fa-briefcase"></i></span>
+          Experiencia Laboral
+        </h2>
+
+        <div class="experience__timeline">
+          <div class="experience__item" data-aos="fade-up" data-aos-delay="100">
+            <div class="experience__icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="experience__content">
+              <h3>Atención al Cliente</h3>
+              <p class="experience__company">La Central Celulares</p>
+              <p class="experience__location"><i class="fa-solid fa-location-dot"></i> San José, Entre Ríos</p>
+              <ul class="experience__details">
+                <li>Atención y asesoramiento a clientes</li>
+                <li>Gestión de ventas y stock de productos</li>
+                <li>Soporte técnico básico de dispositivos móviles</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience__item" data-aos="fade-up" data-aos-delay="200">
+            <div class="experience__icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="experience__content">
+              <h3>Formación Académica</h3>
+              <p class="experience__company">Licenciatura en Sistemas</p>
+              <p class="experience__location"><i class="fa-solid fa-location-dot"></i> Concepción del Uruguay, Entre Ríos</p>
+              <ul class="experience__details">
+                <li>Analista de Sistemas (Título intermedio)</li>
+                <li>Licenciatura en sistemas de información 100% materias aprobadas</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
-      <!-- ------------------------------------Fin Work Experience ------------------------------ -->
+      </div>
+    </section>
 
-      <section class="form-for-contact">
-          <h1>Enviame un email</h1>
-          <form action="https://formsubmit.co/matiasnuniez192@gmail.com" method="POST">
-            <input type="text" name="name" id="name" placeholder="Nombre...">
-            <input type="email" name="email" id="email" placeholder="Email...">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje..."></textarea>
-            <button type="submit">Enviar</button>
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title" data-aos="fade-up">
+          <span class="section__title-icon"><i class="fa-solid fa-paper-plane"></i></span>
+          Contacto
+        </h2>
+        <p class="section__subtitle" data-aos="fade-up" data-aos-delay="100">
+          ¿Tenés un proyecto en mente? ¡Hablemos!
+        </p>
+
+        <div class="contact__wrapper">
+          <div class="contact__info" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact__card">
+              <a href="https://www.github.com/MatiasNuniez" target="_blank" class="contact__link">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+                <p>@MatiasNuniez</p>
+              </a>
+            </div>
+            <div class="contact__card">
+              <a href="https://www.linkedin.com/in/matiasnuniez/" target="_blank" class="contact__link">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+                <p>Matias Nuñez</p>
+              </a>
+            </div>
+            <div class="contact__card">
+              <a href="mailto:matiasnuniez192@gmail.com" class="contact__link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+                <p>matiasnuniez192@gmail.com</p>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact__form" data-aos="fade-left" data-aos-delay="200" action="https://formsubmit.co/matiasnuniez192@gmail.com" method="POST">
+            <div class="form__group">
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="name" placeholder="Tu nombre..." required>
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form__group">
+              <label for="message">Mensaje</label>
+              <textarea name="message" id="message" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+            </button>
             <input type="hidden" name="_next" value="https://matiasnuniez.github.io/">
             <input type="hidden" name="_captcha" value="false">
           </form>
-      </section>
-
-    </div>
-
-    <!-- -----------------------------------Contact ----------------------------- -->
-    <section class="contact" id="Contact">
-        <a class="github" href="https://www.github.com/MatiasNuniez" target="_blank"><i
-            class="fa-brands fa-github"></i></a>
-        <a class="gmail"><i class="fa-solid fa-envelope"></i><br></br>matiasnuniez192@gmail.com</a>
-        <a class="linkedin" href="https://www.linkedin.com/in/matiasnuniez/"><i
-            class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
     </section>
-    <!-- ------------------------------- Fin Contact ------------------------------------- -->
-    
-  </div>
+  </main>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <h3>MatiasDev<span class="point">.</span></h3>
+          <p>Desarrollador Full Stack</p>
+        </div>
+        <div class="footer__social">
+          <a href="https://www.github.com/MatiasNuniez" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/matiasnuniez/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:matiasnuniez192@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Matias Nuñez. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 100,
+      duration: 600
+    });
+
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav__links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 
 </html>
